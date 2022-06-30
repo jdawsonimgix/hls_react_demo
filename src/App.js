@@ -4,6 +4,7 @@ import ReactHlsPlayer from 'react-hls-player'
 import ReactPlayer from 'react-player'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 import TheHeader from './components/TheHeader'
+import TheFooter from './components/TheFooter'
 
 function App() {
   const [urlHLS, setHLS] = useState(
@@ -32,7 +33,6 @@ function App() {
       <TheHeader />
 
       <div className="App">
-        <h3>HLS vs MP4 imgix demo app</h3>
         <Navbar bg="primary" variant="dark">
           <Container>
             <Nav className="me-auto">
@@ -99,6 +99,7 @@ function App() {
           />
         </header>
       </div>
+      <TheFooter />
     </>
   )
 }
